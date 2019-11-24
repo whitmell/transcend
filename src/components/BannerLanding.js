@@ -1,11 +1,13 @@
 import React from 'react'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import picFood from '../assets/images/food.jpg'
+import picFoodBowls from '../assets/images/food-bowls.jpg'
 
 export const BannerLanding = (props) => {
     const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo.png" }) {
+      file(relativePath: { eq: "logo-white.png" }) {
         childImageSharp {
           # Specify a fluid image and fragment
           # The default maxWidth is 800 pixels

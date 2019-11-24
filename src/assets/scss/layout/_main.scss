@@ -13,7 +13,7 @@
 			border-top: solid 1px _palette(border);
 
 			&:first-child {
-				border-top: 0;
+				border-top: solid 3px _palette(border);
 			}
 
 			@include inner;
