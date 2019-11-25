@@ -35,24 +35,55 @@
 			overflow: hidden;
 			position: relative;
 			width: 40%;
+			//border:.1vh solid white;
 
 			.image {
 				display: none;
 			}
 
 			header {
+				margin-top: 5rem;
 				position: relative;
 				z-index: 3;
+				transform: translateY(5vh);
+				transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 			}
 
-			h3 {
-				font-size: 1.75em;
+			.contract-link {
+				visibility: hidden;
+			}
 
+			.contract-header {
+				word-spacing: 3rem;
+				margin-bottom: 5vh;
+				font-size: 7vh;
+			}
+
+			.blog-info {
+				margin-bottom: 12vh;
+			}
+
+
+			h3 {
+				font-size: 1.4em;
+				text-align: center;
 				a {
 					&:hover {
 						color: inherit !important;
 					}
 				}
+				letter-spacing: _font(letter-spacing-alt);
+				margin-bottom: 0;
+				text-transform: uppercase;
+			}
+
+			p {
+				visibility: hidden;
+				// font-size: 1em;
+				// font-weight: _font(weight-bold);
+				// letter-spacing: _font(letter-spacing-alt);
+				// margin-bottom: 0;
+				// text-transform: uppercase;
 			}
 
 			.link.primary {
@@ -72,7 +103,7 @@
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -92,7 +123,17 @@
 
 			&:hover {
 				&:before {
-					opacity: 0;
+					opacity: 0.5;
+				}
+				header {
+					transform: translateY(-5vh);
+					transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+				}
+				p {
+					visibility: visible;
+				}
+				.contract-link {
+					visibility: visible;
 				}
 			}
 
@@ -107,6 +148,18 @@
 				width: 60%;
 			}
 
+			&:nth-child(5n) {
+				width: 33.33333%;
+			}
+
+			&:nth-child(6n) {
+				width: 33.33333%;
+			}
+
+			&:nth-child(7n) {
+				width: 33.33333%;
+			}
+
 			&:nth-child(6n - 5) {
 				&:before {
 					background-color: _palette(accent1);
@@ -115,7 +168,7 @@
 
 			&:nth-child(6n - 4) {
 				&:before {
-					background-color: _palette(accent2);
+					background-color: _palette(accent7);
 				}
 			}
 

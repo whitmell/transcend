@@ -30,9 +30,19 @@ class HomeIndex extends React.Component {
                 <div id="main">
                     <section id="one" className="tiles">
                         <article style={{backgroundImage: `url(${pic01})`}}>
+                            
                             <header className="major">
-                                <h3>Aliquam</h3>
-                                <p>Ipsum dolor sit amet</p>
+                                <h3>What we do</h3>
+                                <p style={{fontWeight:'bold'}}>
+                                Education, support, encouragement, and accountability. 
+                                </p>
+                                <p>
+                                    Don’t just change your body but learn how to structure your diet using foods you love so you’ll never have to “diet” again. 
+                                </p>
+                                <p>
+                                    We provide you the framework to work within to change your body according to your goals, and were with you every step of the way. We use either macronutrients or a few different metrics for daily tracking to keep you progressing. As important as your results in the short term are to us, we’re just as focused on long term sustainability and making sure you’re mindset towards food is in a much better place by our time together is your, ensuring you KEEP all the changes we earn together. 
+                                    We set you up and educate you so you’ll never have to diet again. Get the best body you can remember using evidence based methods, and have a coach in your corner every step of the way. 
+                                </p>   
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
