@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import Banner from '../components/Banner'
+import BannerLanding from '../components/BannerLanding'
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -16,16 +16,16 @@ class HomeIndex extends React.Component {
 
         return (
             <Layout>
-                <Helmet
+                {/* <Helmet
                     title="Gatsby Starter - Forty"
                     meta={[
                         { name: 'description', content: 'Sample' },
                         { name: 'keywords', content: 'sample, something' },
                     ]}
                 >
-                </Helmet>
+                </Helmet> */}
 
-                <Banner />
+                <BannerLanding />
 
                 <div id="main">
                     <section id="one" className="tiles">
@@ -48,50 +48,44 @@ class HomeIndex extends React.Component {
                         </article>
                         <article style={{backgroundImage: `url(${pic02})`}}>
                             <header className="major">
-                                <h3>Tempus</h3>
-                                <p>feugiat amet tempus</p>
+                                <h3>Who we are</h3>
+                                <p>
+                                Our nutrition coaches have years of experience and have worked with thousands on goals ranging from fat loss, to performance gains. We’ve helped individuals do everything from losing 200+ lbs to helping runners qualify from Boston. We’re equally well versed in normal working folks as we are with high level endurance athletes and we’ve got the track record to show you excellence helping just about every population. 
+                            </p>
+                            <p>
+                                Let us help you take the guesswork out of your nutrition so you can have the best body you can remember and FEEL better than ever!
+                            </p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic03})`}}>
                             <header className="major">
-                                <h3>Magna</h3>
-                                <p>Lorem etiam nullam</p>
+                                <h3>Work with us</h3>
+                                <p>Request our monthly rates and tell us more about yourself and give us the opportunity to learn more about you, your situation, and your goals. This is a team effort so let’s learn more about each other!</p>  
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic04})`}}>
                             <header className="major">
-                                <h3>Ipsum</h3>
-                                <p>Nisl sed aliquam</p>
+                                <h3>Accountability</h3>
+                                <p>Weekly checkins and access to your coach within that means you have a partner in your journey and youâ€™re never alone. Your success is our success and we’re here to hold you accountable. Don’t go it alone, and stop guessing.</p> 
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
-                                <h3>Consequat</h3>
-                                <p>Ipsum dolor sit amet</p>
+                                <h3>Monthly Rates</h3>
+                                <p>No sticker shock here. Affordable nutrition coaching proven to get you in your best shape possible.</p> 
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
                         <article style={{backgroundImage: `url(${pic06})`}}>
                             <header className="major">
-                                <h3>Etiam</h3>
-                                <p>Feugiat amet tempus</p>
+                                <h3>Why Nutrition Coaching?</h3>
+                                <p>Diet is truly the bulk of the battle for body composition change. Too many folks spend hours and hours in the gym trying to out-train a bad diet. If they spent the same (less?) effort paying attention to their nutrition they’d d carry far less stress and enjoy life a whole lot more. Let us show you the way!</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article>
-                    </section>
-                    <section id="two">
-                        <div className="inner">
-                            <header className="major">
-                                <h2>Massa libero</h2>
-                            </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-                            <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
-                            </ul>
-                        </div>
                     </section>
                 </div>
 

@@ -144,16 +144,16 @@
 			}
 
 			&:nth-child(4n - 1),
-			&:nth-child(4n - 2) {
+			&:nth-child(4n - 2),  {
 				width: 60%;
 			}
 
-			&:nth-child(5n) {
-				width: 33.33333%;
-			}
+			// &:nth-child(5n) {
+			// 	width: 33.33333%;
+			// }
 
 			&:nth-child(6n) {
-				width: 33.33333%;
+				width: 60%;
 			}
 
 			&:nth-child(7n) {
